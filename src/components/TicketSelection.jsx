@@ -196,7 +196,7 @@ const TicketSelection = ({ setIsTicketSelected, showErrors }) => {
           {isDropdownOpen && selectedTicketType && (
             <div className="absolute top-full left-0 w-full mt-2 p-2 rounded-xl border border-borderthree bg-greenfour">
               {Array.from(
-                { length: Math.min(5, ticketsLeft[selectedTicketType] || 0) },
+                { length: Math.min(10, ticketsLeft[selectedTicketType] || 0) },
                 (_, i) => i + 1,
               ).map((num) => (
                 <div

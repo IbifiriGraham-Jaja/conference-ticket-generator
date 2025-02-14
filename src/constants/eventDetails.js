@@ -8,7 +8,7 @@ export const eventDetails = {
     {
       id: 1,
       type: "Regular Access",
-      limit: 20,
+      limit: 52,
       price: 0
     },
     {

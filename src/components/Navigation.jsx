@@ -22,7 +22,7 @@ const Navigation = () => {
           className="cursor-pointer md:cursor-default"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <Image src="/logo.svg" alt="logo" width={91} height={36} />
+          <Image src="/logo.svg" alt="logo" width={90} height={30} />
         </div>
 
         {/* Mobile dropdown menu */}
