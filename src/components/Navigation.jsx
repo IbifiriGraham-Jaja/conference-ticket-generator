@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/nav";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const Nav = () => {
+const Navigation = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -78,4 +78,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navigation;
