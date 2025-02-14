@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 
 export const metadata = {
   title: "Conference Ticket Generator", 
-  description: "Generate you personalized conference ticket",
+  description: "Generate you personalized",
 };
 
 export default function RootLayout({ children }) {

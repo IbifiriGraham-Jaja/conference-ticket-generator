@@ -103,7 +103,7 @@ const Stepper = ({ steps, onFormSubmit, canProceed, setCanProceed, isTicketSelec
               onClick={handleGetTicket}
               className={`px-6 w-full py-3 rounded-lg bg-greenone hover:bg-borderone text-white transition-colors whitespace-nowrap`}
             >
-              Get My Free Ticket
+              Get A Free Ticket
             </button>
           </div>
         );
