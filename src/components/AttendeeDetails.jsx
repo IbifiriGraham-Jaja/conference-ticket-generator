@@ -30,13 +30,13 @@ const AttendeeDetails = forwardRef(({ onSubmit }, ref) => {
     }
   }, []);
 
-  // Upload image to Cloudinary and get link
+  //  to Cloudinary and get link
   const uploadToCloudinary = async (file) => {
     try {
       setIsUploading(true);
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "ml_default");
+      formData.append("upload_preset","ml_default");
 
       const response = await fetch(
         `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
@@ -167,7 +167,7 @@ const AttendeeDetails = forwardRef(({ onSubmit }, ref) => {
     }
   };
 
-  // Handle submit (checks if the image, name, and email are valid and saves the data to local storage)
+  // Handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
     let hasErrors = false;
@@ -223,7 +223,7 @@ const AttendeeDetails = forwardRef(({ onSubmit }, ref) => {
     }
   };
 
-  // Handle key press (opens the file input when the user presses enter or space) - accessibility
+  // Opens the file input when the user presses enter or space
   const handleKeyPress = (e) => {
     if (e.key === "Enter" || e.key === " ") {
       handleClick();
